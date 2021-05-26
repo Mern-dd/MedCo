@@ -1,0 +1,278 @@
+.row-header{
+  margin:0px auto;
+  padding:0px auto;
+}
+
+.row-content {
+  margin:0px auto;
+  padding: 50px 0px 50px 0px;
+  border-bottom: 1px ridge;
+  min-height:100px;
+}
+
+.footer{
+  background-color: #D1C4E9;
+  margin:0px auto;
+  padding: 20px 0px 20px 0px;
+}
+
+
+address{
+  font-size:80%;
+  margin:0px;
+  color:#0f0f0f;
+}
+.navbar{
+height:80px;
+
+}
+
+
+.collapse{
+z-index: 10;
+
+}
+.navbar-dark {
+background-color: grey;
+
+}
+.nav-link{
+color: black;
+}
+.container {
+padding-top: 3rem;
+padding-bottom: 5rem;
+}
+.card-container {
+cursor: pointer;
+height: 300px;
+perspective: 600;
+position: relative;
+width: 300px;
+}
+.card {
+height: 100%;
+position: absolute;
+transform-style: preserve-3d;
+transition: all 1s ease-in-out;
+width: 100%;
+}
+.card img{
+height: 100%;
+width: 100%;
+}
+.card:hover {
+transform: rotateY(180deg);
+}
+.card .side {
+backface-visibility: hidden;
+border-radius: 6px;
+height: 100%;
+position: absolute;
+overflow: hidden;
+width: 100%;
+}
+.card .back {
+background:whitesmoke;
+color:black;
+padding-top: 50px;
+line-height: 50px;
+font-size: 20px;
+text-align: center;
+border: 1px solid black;
+transform: rotateY(180deg);
+}
+.media{
+border-bottom: black;
+
+}
+.Bg-overlay-text{
+  background-color: transparent;
+  align-self: center;
+  align-content: center;
+  padding-top: 290px;
+  padding-bottom: 200px;
+}
+.Bg-overlay-text p{
+ font-size: 24px;
+ color: rgb(19, 24, 24);
+ font-weight: 310;
+ padding-left: 140px;
+ padding-right: 140px;
+ padding-top: 30px;
+;
+
+}
+.collabs img{
+	
+  width:80%;
+}
+.logo{
+  width: 30%;
+}
+
+
+input:focus, textarea:focus, keygen:focus, select:focus {
+	outline: none;
+}
+::-moz-placeholder {
+	color: #666;
+	font-weight: 300;
+	opacity: 1;
+}
+
+::-webkit-input-placeholder {
+	color: #666;
+	font-weight: 300;
+}
+
+
+
+.textcenter {
+	text-align: center;
+}
+.section1 {
+	text-align: center;
+	display: table;
+	width: 100%;
+}
+.section1 .shtext {
+	display: block;
+	margin-top: 20px;
+}
+.section1 .seperator {
+	border-bottom:1px solid #a2a2a2;
+	width: 35px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.section1 h1 {
+	font-size: 40px;
+	color: #57CBCC;
+	font-weight: normal;
+}
+.header .nav-link{
+	padding-top: 20px;
+	margin-right: 40px;
+	font-size: 18px;
+	color: #57CBCC;
+}
+.header .headerb{
+	margin-top: 20px;
+	margin-left: 50px;
+	background: #57CBCC;
+	color: white;
+
+}
+.section2 {
+    width: 1200px;
+    margin: 25px auto;
+}
+.section2 .col2 {
+	width: 48.71%;
+}
+.section2 .col2.first {
+	float: left;
+}
+.section2 .col2.last {
+	float: right;
+}
+.section2 .col2.column2 {
+	padding: 0 30px;
+}
+.section2 span.collig {
+	color: #a2a2a2;
+	margin-right: 10px;
+	display: inline-block;
+}
+.section2 .sec2addr {
+	display: block;
+	line-height: 26px;
+}
+.section2 .sec2addr p:first-child {
+	margin-bottom: 10px;
+}
+.section2 .sec2contactform input[type="text"], 
+.section2 .sec2contactform input[type="email"],
+.section2 .sec2contactform textarea {
+    padding: 18px;
+    border: 0;
+    background: #EDEDED;
+    margin: 7px 0;
+}
+.section2 .sec2contactform textarea {
+	width: 100%;
+	display: block;
+	color: #666;
+  resize:none;
+}
+.section2 .sec2contactform input[type="submit"] {
+	padding: 15px 40px;
+    color: #fff;
+    border: 0;
+    background: #57CBCC;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.section2 .sec2contactform h3 {
+	font-weight: normal;
+    margin: 20px 0;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 19px;
+    color: #57CBCC;
+}
+
+/* @media querries */
+
+@media only screen and (max-width: 1266px) {
+	.section2 {
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.container {
+		padding: 0 30px 70px;
+	}
+	.section2 .col2 {
+		width: 100%;
+		display: block;
+	}
+	.section2 .col2.first {
+		margin-bottom: 10px;
+	}
+	.section2 .col2.column2 {
+		padding: 0;
+	}
+	body .sec2map {
+		height: 250px !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.section2 .sec2addr {
+		font-size: 14px;
+	}
+	.section2 .sec2contactform h3 {
+		font-size: 16px;
+	}
+	.section2 .sec2contactform input[type="text"], .section2 .sec2contactform input[type="email"], .section2 .sec2contactform textarea {
+		padding: 10px;
+		margin:3px 0;
+	}
+	.section2 .sec2contactform input[type="submit"] {
+		padding: 10px 30px;
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 420px) {
+	.section1 h1 {
+		font-size: 28px;
+	}	
+}
+
+/* END jumbotron --------------------------------------- */
+
+

@@ -1,0 +1,97 @@
+full width background vimeo video
+.video-bg 
+{
+  position: relative;pointer-events: none;
+  overflow: hidden;
+}
+
+
+.video-bg iframe 
+{
+  /* via: https://stackoverflow.com/questions/21314206/full-width-vimeo-wrapper-background */
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/* stole swift ideas theme .sf-parallax-video stuff */
+.video-bg > .video-bg-overlay
+{
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.video-bg .container 
+{
+  position: relative;
+  z-index: 4;
+}
+
+/* START jumbotron ------------------------------------- */
+ .jumbotron 
+{
+  margin-bottom: 0;
+  /* no actual source - no biggie */
+  background: url('dance.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: #ffffff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+} 
+
+.jumbotron h1 
+{
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+/* using this to control video height */
+.jumbotron .height-control 
+{
+  min-height: 320px;
+}
+
+@media (min-width: 576px)
+{
+  .jumbotron
+  {
+      padding: 2rem 2rem;
+  }
+
+  .jumbotron h1 
+  {
+      font-size: 2.0rem;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .jumbotron h1 
+  {
+      font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .jumbotron .height-control 
+  {
+      min-height: 340px;
+  }
+}
